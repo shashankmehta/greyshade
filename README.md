@@ -3,7 +3,7 @@
 Greyshade is a minimal theme for Octopress.
 Based on [Slash](https://github.com/tommy351/Octopress-Theme-Slash)  
 
-[Demo](http://shashankmehta.in)
+[Demo](http://shashankmehta.in/archive/2012/greyshade.html)
 
 ##Conditions
 
