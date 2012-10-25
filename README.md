@@ -17,3 +17,7 @@ Type the code below in terminal.
 	$ echo "\$greyshade: color;" >> sass/custom/_colors.scss //Substitue 'color' with the color that you want as the highlight in the theme
 	$ rake install['greyshade']
 	$ rake generate
+
+##License
+
+MIT: [http://sm.mit-license.org](http://sm.mit-license.org/)
