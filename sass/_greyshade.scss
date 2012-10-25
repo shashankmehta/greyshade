@@ -1,0 +1,189 @@
+// This File is imported last, and will override other styles in the cascade
+// Add styles here to make changes without digging in too much
+
+
+body {
+	background: #3D4349;
+	font-family: "Open Sans", "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#header {
+	height: auto;
+	border-bottom: none;
+
+	#sub-nav {
+		float: none;
+		position: relative;
+		.social {
+			float: none;
+		}
+		.search {
+			float: none;
+			.alignright {
+				float: none;
+			}
+		}
+	}
+
+	h1 {
+		float: none;
+	}
+
+	#main-nav {
+		float: none;
+		margin-left: 0px;
+
+		ul { 
+			li {
+				margin-left: 0px;
+				display: block;
+				a {
+					padding: 0px 0px;
+				}
+			}
+		}
+	}
+}
+
+.container {
+	.mid-col {
+		float: right;
+		width: 77%;
+		background: whitesmoke;
+		.mid-col-container {
+			padding: 0px 70px 0px 40px;
+			#content {
+				width: 100%;
+				article {
+					border-top: none;
+					.title {
+						margin-left: 0px;
+					}
+					.entry-content {
+						margin-left: 0px;
+						blockquote {
+							border-left: 5px solid $greyshade;
+							background: #FCFCFC;
+						}
+					}
+					.meta {
+						position: relative;
+						float: right;
+						top: 0px;
+						color: #555;
+						text-align: right;
+						.date::before {
+							color: #555;
+							position: relative;
+							margin-right: 10px;
+						}
+						.tags::before {
+							color: #999;
+							position: relative;
+							margin-right: 10px;
+						}
+					}
+					h1.title{
+						a {
+							color: #333;
+							-webkit-transition: color 0.3s;
+							-moz-transition: color 0.3s;
+							-o-transition: color 0.3s;
+							transition: color 0.3s;	
+						}
+						a:hover {
+							color: $greyshade;
+							-webkit-transition: color 0.3s;
+							-moz-transition: color 0.3s;
+							-o-transition: color 0.3s;
+							transition: color 0.3s;	
+						}
+					}
+				}
+			}
+		}
+		footer {
+			width: 100%;
+		}
+	}
+	.left-col {
+		width: 16%;
+		position: fixed;
+		#header {
+			width: 100%;
+			padding: 20% 0% 0% 15%;
+			#main-nav {
+				margin-top: 10px;
+			}
+			.profilepic {
+				img {
+					border-radius: 50%;
+					-moz-border-radius: 50%;
+					-webkit-border-radius: 50%;
+				}
+			}
+			a {
+				color: #EFEFEF;
+				text-shadow: 0 1px #333;
+			}
+			a:hover {
+				color: #2571B8;
+			}
+			#sub-nav {
+				.search::before {
+				left: 10px;
+				}
+				.social {
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}
+
+.archives {
+	.title {
+		font-size: 1.2em;
+	}
+	article {
+		.meta {
+			line-height: 1.5em;
+			margin-top: 0;
+			span::before {
+				padding-right: 0;
+			}
+		}
+	}
+}
+a {
+	color: $greyshade;
+}
+
+a:hover {
+	color: $greyshade;
+}
+
+body {
+	@media screen and (max-width: 1040px){
+			margin: 0 0;
+	}
+}
+@media screen and (max-width: 700px){
+	#sub-nav{
+		display: block;
+	}
+	.container {
+		.left-col {
+			position: relative;
+			width: 100%;
+			#header {
+				padding: 40px 0px;
+				text-align: center;
+			}
+		}
+		.mid-col {
+			float: none;
+			width: 100%;
+		}
+	}
+}

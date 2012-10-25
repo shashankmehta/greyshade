@@ -1,0 +1,49 @@
+$max-width: 1000px;
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: $font-default;
+	font-weight: 300;
+	font-size: 14px;
+	background: $color-background;
+	color: $color-gray01;
+	@media screen and (max-width: 1040px){
+		margin: 0 20px;
+	}
+	@media screen and (max-width: 600px){
+		font-size: 13px;
+	}
+}
+h1{
+	font-size: 1.8em;
+}
+h2{
+	font-size: 1.5em;
+}
+h3{
+	font-size: 1.3em;
+}
+a{
+	text-decoration: none;
+	outline-width: 0;
+	color: $color-main;
+}
+.alignleft{
+	float: left;
+}
+.alignright{
+	float: right;
+}
+.clearfix{
+	@include pie-clearfix;
+}
+.inner{
+	width: $max-width;
+	margin: 0 auto;
+	@media screen and (max-width: 1040px){
+		width: 100%;
+	}
+}

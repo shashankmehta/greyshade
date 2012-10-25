@@ -1,0 +1,36 @@
+<div class="profilepic">	
+	<img src="/images/dp.jpg" alt="Profile Picture" style="width: 160px;">
+</div>
+<h1><a href="{{ root_url }}/">{{ site.title }}</a></h1>
+<nav id="main-nav">{% include navigation.html %}</nav>
+<br/>
+<h3 class="alignleft">{{ site.subtitle }}</h3>
+<nav id="sub-nav" class="alignright">
+	<div class="social">
+		{% if site.facebook_user %}
+		<a class="facebook" href="http://www.facebook.com/{{ site.facebook_user }}" title="Facebook">Facebook</a>
+		{% endif %}
+		{% if site.googleplus_user and site.googleplus_hidden == false %}
+		<a class="google" href="https://plus.google.com/{{ site.googleplus_user }}?rel=author" title="Google+">Google+</a>
+		{% endif %}
+		{% if site.twitter_user %}
+		<a class="twitter" href="http://twitter.com/{{ site.twitter_user }}" title="Twitter">Twitter</a>
+		{% endif %}
+		{% if site.github_user %}
+		<a class="github" href="https://github.com/{{ site.github_user }}" title="GitHub">GitHub</a>
+		{% endif %}
+		{% if site.linkedin_user %}
+		<a class="linkedin" href="http://www.linkedin.com/in/{{ site.linkedin_user }}">LinkedIn</a>
+		{% endif %}
+		{% if site.pinterest_user %}
+		<a class="pinterest" href="https://pinterest.com/{{ site.pinterest_user }}" title="Pinterest">Pinterest</a>
+		{% endif %}
+		{% if site.delicious_user %}
+		<a class="delicious" href="http://delicious.com/{{ site.delicious_user }}" title="Delicious">Delicious</a>
+		{% endif %}
+		{% if site.subscribe_rss %}
+		<a class="rss" href="{{ site.subscribe_rss }}" title="RSS">RSS</a>
+		{% endif %}
+	</div>
+</nav>
+{% include custom/header.html %}
