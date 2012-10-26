@@ -72,6 +72,7 @@ body {
 						top: 0px;
 						color: #555;
 						text-align: right;
+						width: auto;
 						.date::before {
 							color: #555;
 							position: relative;
@@ -155,6 +156,7 @@ body {
 		}
 	}
 }
+
 a {
 	color: $greyshade;
 }
@@ -169,9 +171,6 @@ body {
 	}
 }
 @media screen and (max-width: 700px){
-	#sub-nav{
-		display: block;
-	}
 	.container {
 		.left-col {
 			position: relative;
@@ -179,11 +178,33 @@ body {
 			#header {
 				padding: 40px 0px;
 				text-align: center;
+				#sub-nav{
+					display: block;
+				}
+				#main-nav {
+						ul {	
+							display: block;
+							li {
+								display: inline;
+								margin-right: 10px;
+							}
+						}
+				}
 			}
 		}
 		.mid-col {
 			float: none;
 			width: 100%;
+			.mid-col-container {
+				padding: 15px 15px;
+				#content {
+					article {
+						.meta {
+							float: none;
+						}
+					}
+				}
+			}
 		}
 	}
 }
