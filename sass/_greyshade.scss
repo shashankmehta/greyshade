@@ -46,6 +46,17 @@ body {
 }
 
 .container {
+	.credit-box {
+		color: #AAA;
+		font-size: .8em;
+		position: fixed;
+		bottom: 20px;
+		left: 40px;
+		a {
+			color: inherit;
+			text-decoration: underline;
+		}
+	}
 	.mid-col {
 		float: right;
 		width: 77%;
@@ -131,6 +142,7 @@ body {
 				color: $greyshade;
 			}
 			#sub-nav {
+				margin-top: 10px;
 				.search::before {
 				left: 10px;
 				}
@@ -172,6 +184,9 @@ body {
 }
 @media screen and (max-width: 700px){
 	.container {
+		.credit-box {
+			display: none;
+		}
 		.left-col {
 			position: relative;
 			width: 100%;
