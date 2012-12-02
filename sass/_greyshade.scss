@@ -118,9 +118,18 @@ body {
 			width: 100%;
 		}
 	}
+	.left-col:hover {
+		opacity: 1;
+	}
 	.left-col {
-		width: 16%;
+		width: 23%;
 		position: fixed;
+		opacity: .4;
+		-webkit-transition: all .2s ease-in;
+		height: 100%;
+		.intrude-less {
+			width: 80%;
+		}
 		#header {
 			width: 100%;
 			padding: 20% 0% 0% 15%;
@@ -190,6 +199,10 @@ body {
 		.left-col {
 			position: relative;
 			width: 100%;
+			opacity: 1;
+			.intrude-less {
+				margin: auto auto;
+			}
 			#header {
 				padding: 40px 0px;
 				text-align: center;
