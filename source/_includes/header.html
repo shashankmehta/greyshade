@@ -2,10 +2,9 @@
 	<img src="/images/dp.jpg" alt="Profile Picture" style="width: 160px;">
 </div>
 <h1><a href="{{ root_url }}/">{{ site.title }}</a></h1>
+<p class="subtitle">{{ site.subtitle }}</p>
 <nav id="main-nav">{% include navigation.html %}</nav>
-<br/>
-<h3 class="alignleft">{{ site.subtitle }}</h3>
-<nav id="sub-nav" class="alignright">
+<nav id="sub-nav">
 	<div class="social">
 		{% if site.facebook_user %}
 		<a class="facebook" href="http://www.facebook.com/{{ site.facebook_user }}" title="Facebook">Facebook</a>

@@ -10,7 +10,10 @@ body {
 #header {
 	height: auto;
 	border-bottom: none;
-
+	.subtitle {
+		color: #999;
+		font-style: italic;
+	}
 	#sub-nav {
 		float: none;
 		position: relative;
@@ -124,7 +127,7 @@ body {
 	.left-col {
 		width: 23%;
 		position: fixed;
-		opacity: .4;
+		opacity: .3;
 		-webkit-transition: all .2s ease-in;
 		height: 100%;
 		.intrude-less {
