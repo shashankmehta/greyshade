@@ -12,7 +12,7 @@ Based on [Slash](https://github.com/tommy351/Octopress-Theme-Slash)
 
 ![Desktop view](https://dl.dropbox.com/u/6396581/greyshade/2.png)
 
-##Conditionsge 
+##Conditions 
 
 The only condition to use this theme for your octopress blog is that you have to set a different highlight color than the ones mentioned [here](https://github.com/shashankmehta/greyshade/wiki/Sites-using-Greyshade). When you have chosen a highlight color, please add it to the [wiki](https://github.com/shashankmehta/greyshade/wiki/Sites-using-Greyshade) so that no one else uses it.
 
@@ -26,6 +26,11 @@ Type the code below in terminal.
 	$ echo "\$greyshade: color;" >> sass/custom/_colors.scss //Substitue 'color' with your highlight color
 	$ rake install['greyshade']
 	$ rake generate
+
+##TO DO
+
+1. Add search function
+2. Add Octopress credit tag somewhere
 
 ##License
 
