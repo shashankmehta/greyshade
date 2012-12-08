@@ -3,7 +3,7 @@
 		<div class="date">{% include post/date.html %}{{ time }}</div>
 		<div class="tags">{% include post/categories.html %}</div>
 		{% if site.disqus_short_name and site.disqus_show_comment_count == true %}
-			<span class="comments"><a href="{{ root_url }}{{ post.url }}{{ page.url }}#disqus_thread">Comments</a></span>
+			<span class="comments"><a href="{{ root_url }}{{ post.url }}#disqus_thread">Comments</a></span>
 		{% endif %}
 	</div>
 	<h1 class="title"><a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a></h1>
