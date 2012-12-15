@@ -75,6 +75,14 @@ body {
 					}
 					.entry-content {
 						margin-left: 0px;
+						.gist .gist-file .gist-data {
+							.line_numbers {
+								line-height: inherit;
+							}
+							pre {
+								line-height: inherit;
+							}
+						}
 						h2 {
 							font-size: 1.3em;
 							color: #574C4C;
@@ -86,6 +94,12 @@ body {
 						blockquote {
 							border-left: 5px solid $greyshade;
 							background: #FCFCFC;
+						}
+						table {
+							line-height: 1.2em;
+							td {
+								text-align: left;
+							}
 						}
 					}
 					.meta {
