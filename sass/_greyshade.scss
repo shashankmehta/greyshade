@@ -1,10 +1,13 @@
-// This File is imported last, and will override other styles in the cascade
-// Add styles here to make changes without digging in too much
-
+//This is the main GREYSHADE css file. 
 
 body {
 	background: #3D4349;
 	font-family: "Open Sans", "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+::selection, ::-moz-selection, ::-webkit-selection {
+  background-color: $greyshade;
+  color: $color-background;
 }
 
 #header {
