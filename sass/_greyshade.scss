@@ -67,6 +67,12 @@ body {
 		float: right;
 		width: 77%;
 		background: whitesmoke;
+		#banner {
+			width: 100%;
+			small {
+			margin-right: 70px;
+			}
+		}
 		.mid-col-container {
 			padding: 0px 70px 0px 40px;
 			#content {
