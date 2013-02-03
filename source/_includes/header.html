@@ -1,5 +1,8 @@
 <div class="profilepic">	
-	<img src="/images/dp.jpg" alt="Profile Picture" style="width: 160px;">
+	<script src="{{ root_url }}/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		document.write("<img src='http://www.gravatar.com/avatar/" + MD5("{{ site.email }}") + "?s=160' alt='Profile Picture' style='width: 160px;'");
+	</script>
 </div>
 <h1><a href="{{ root_url }}/">{{ site.title }}</a></h1>
 <p class="subtitle">{{ site.subtitle }}</p>
