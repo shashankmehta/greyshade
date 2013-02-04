@@ -1,6 +1,3 @@
-NOTE: This is work in progress. I need to change minor stuff and tweak this theme in general. So if you plan to or have added this theme then you may want to watch this repo for version releases.
-Current version: v0.9
-
 #Greyshade
 
 Greyshade is a minimal, responsive theme for Octopress.
@@ -26,12 +23,7 @@ Type the code below in terminal.
 	$ echo "\$greyshade: color;" >> sass/custom/_colors.scss //Substitue 'color' with your highlight color
 	$ rake install['greyshade']
 	$ rake generate
-
-##TO DO
-
-1. Add search function
-2. Add Octopress credit tag somewhere
-
+  
 ##License
 
 MIT: [http://sm.mit-license.org](http://sm.mit-license.org/)
