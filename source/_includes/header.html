@@ -4,7 +4,7 @@
 		document.write("<img src='http://www.gravatar.com/avatar/" + MD5("{{ site.email }}") + "?s=160' alt='Profile Picture' style='width: 160px;'");
 	</script>
 </div>
-<h1><a href="{{ root_url }}/">{{ site.title }}</a></h1>
+{% include custom/header.html %}
 <p class="subtitle">{{ site.subtitle }}</p>
 <nav id="main-nav">{% include navigation.html %}</nav>
 <nav id="sub-nav">
@@ -38,4 +38,3 @@
 		{% endif %}
 	</div>
 </nav>
-{% include custom/header.html %}
