@@ -21,7 +21,7 @@ Type the code below in terminal.
 
 	$ git clone git@github.com:shashankmehta/greyshade.git .themes/greyshade
 	$ echo "\$greyshade: color;" >> sass/custom/_colors.scss //Substitue 'color' with your highlight color
-	$ rake install['greyshade']
+	$ rake "install[greyshade]"
 	$ rake generate
   
 ##License
