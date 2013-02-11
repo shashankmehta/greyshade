@@ -1,8 +1,13 @@
-//This is the main GREYSHADE css file. 
+//This is the main GREYSHADE css file.
+
+html {
+  height: 100%;
+}
 
 body {
 	background: #3D4349;
 	font-family: "Open Sans", "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+	height: 100%;
 }
 
 ::selection, ::-moz-selection, ::-webkit-selection {
@@ -39,7 +44,7 @@ body {
 		float: none;
 		margin-left: 0px;
 
-		ul { 
+		ul {
 			li {
 				margin-left: 0px;
 				display: block;
@@ -52,6 +57,9 @@ body {
 }
 
 .container {
+  position: relative;
+  min-height: 100%;
+
 	.credit-box {
 		color: #AAA;
 		font-size: .8em;
@@ -64,7 +72,9 @@ body {
 		}
 	}
 	.mid-col {
-		float: right;
+		position: absolute;
+  	right: 0;
+  	min-height: 100%;
 		width: 77%;
 		background: whitesmoke;
 		#banner {
@@ -135,14 +145,14 @@ body {
 							-webkit-transition: color 0.3s;
 							-moz-transition: color 0.3s;
 							-o-transition: color 0.3s;
-							transition: color 0.3s;	
+							transition: color 0.3s;
 						}
 						a:hover {
 							color: $greyshade;
 							-webkit-transition: color 0.3s;
 							-moz-transition: color 0.3s;
 							-o-transition: color 0.3s;
-							transition: color 0.3s;	
+							transition: color 0.3s;
 						}
 					}
 				}
@@ -248,7 +258,7 @@ body {
 					display: block;
 				}
 				#main-nav {
-						ul {	
+						ul {
 							display: block;
 							li {
 								display: inline;
