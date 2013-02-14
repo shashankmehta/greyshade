@@ -71,6 +71,7 @@ article{
 		img, video{
 			max-width: 100%;
 			height: auto;
+			@extend .basic-alignment;
 		}
 		blockquote{
 			background: $color-gray04;
