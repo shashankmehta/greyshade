@@ -3,6 +3,8 @@ layout: default
 title: Blog Archives
 ---
 
+<div itemscope itemtype="http://schema.org/Blog">
 {% for post in site.posts reverse %}
 	{% include archive_post.html %}
 {% endfor %}
+</div>
