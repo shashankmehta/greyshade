@@ -7,14 +7,14 @@
 	{% endunless %}
 	<section class="archives"><h1 class="year">{{ date | date: "%Y" }}</h1>
 {% endunless %}
-<article>
+<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 	<div class="meta">
-		<span class="date">{{ date | date: "%b %e" }}</span>
+		<span class="date"><time datetime="{{ date | datetime | date_to_xmlschema }}" itemprop="datePublished">{{ date | date: "%b %e" }}</time></span>
 		<br>
 		<span class="tags">{% include post/categories.html %}</span>
 	    {% if site.disqus_short_name and post.comments == true and site.disqus_show_comment_count == true %}
 	    <span class="comments"><a href="{{ root_url }}{{ post.url }}#disqus_thread">Comments</a></span>
 	    {% endif %}
 	</div>
-	<h1 class="title"><a href="{{ root_url }}{{ post.url }}">{{post.title}}</a></h1>
+	<h1 class="title" itemprop="name"><a href="{{ root_url }}{{ post.url }}">{{post.title}}</a></h1>
 </article>
