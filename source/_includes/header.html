@@ -1,7 +1,7 @@
 <div class="profilepic">	
 	<script src="{{ root_url }}/javascripts/md5.js"></script>
 	<script type="text/javascript">
-		document.write("<img src='http://www.gravatar.com/avatar/" + MD5("{{ site.email | downcase }}") + "?s=160' alt='Profile Picture' style='width: 160px;'");
+		document.write("<img src='http://www.gravatar.com/avatar/" + MD5("{{ site.email | downcase }}") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
 	</script>
 </div>
 <h1><a href="{{ root_url }}/">{{ site.title }}</a></h1>
