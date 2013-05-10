@@ -40,4 +40,13 @@
 		.tags:before{content: "\f02c";}
 		.comments:before{content: "\f075";}
 	}
+  hr{
+		height: 0;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border-left: 0;
+		border-right: 0;
+		border-top: 1px solid #DDD;
+		border-bottom: 1px solid #FFF;
+	}
 }
