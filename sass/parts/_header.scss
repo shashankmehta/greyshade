@@ -348,6 +348,13 @@ $header-height: 30px;
 					border: 1px solid darken(rgb(175,182,202), 10%);
 				}
 			}
+			&.coderwall{
+				background: image-url('social/coderwall.png') center no-repeat #3E8DCC;
+				border: 1px solid #3E8DCC;
+				&:hover{
+					border: 1px solid darken(#3E8DCC, 10%);
+				}
+			}			
 			&.linkedin{
 				background: image-url('social/linkedin.png') center no-repeat #005A87;
 				border: 1px solid #005A87;
