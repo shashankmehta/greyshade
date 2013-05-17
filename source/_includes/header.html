@@ -1,7 +1,9 @@
 <div class="profilepic">	
 	<script src="{{ root_url }}/javascripts/md5.js"></script>
 	<script type="text/javascript">
-		document.write("<img src='http://www.gravatar.com/avatar/" + MD5("{{ site.email | downcase }}") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+		$(function(){
+			$('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("{{ site.email | downcase }}") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+		});
 	</script>
 </div>
 <h1><a href="{{ root_url }}/">{{ site.title }}</a></h1>
@@ -20,6 +22,9 @@
 		{% endif %}
 		{% if site.github_user %}
 		<a class="github" href="https://github.com/{{ site.github_user }}" title="GitHub">GitHub</a>
+		{% endif %}
+		{% if site.coderwall_user %}
+		<a class="coderwall" href="https://coderwall.com/{{ site.coderwall_user }}" title="Coderwall">Coderwall</a>
 		{% endif %}
 		{% if site.linkedin_user %}
 		<a class="linkedin" href="http://www.linkedin.com/in/{{ site.linkedin_user }}">LinkedIn</a>
