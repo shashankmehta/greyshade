@@ -6,7 +6,7 @@
 		});
 	</script>
 </div>
-<h1><a href="{{ root_url }}/">{{ site.title }}</a></h1>
+{% include custom/header.html %}
 <p class="subtitle">{{ site.subtitle }}</p>
 <nav id="main-nav">{% include navigation.html %}</nav>
 <nav id="sub-nav">
@@ -43,4 +43,3 @@
 		{% endif %}
 	</div>
 </nav>
-{% include custom/header.html %}
