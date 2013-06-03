@@ -358,9 +358,6 @@ $header-height: 30px;
 			&.linkedin{
 				background: image-url('social/linkedin.png') center no-repeat #005A87;
 				border: 1px solid #005A87;
-				&:hover{
-					border: 1px solid darken(#005A87, 10%);
-				}
 			}
 			&.pinterest{
 				background: image-url('social/pinterest.png') center no-repeat rgb(190,64,55);
