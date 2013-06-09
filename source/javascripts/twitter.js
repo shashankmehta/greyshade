@@ -66,11 +66,13 @@
 					fragment.appendChild(item);
 				}
 
-				var play = function(){
+				var play = function(){				
 					timeout = setTimeout(function(){
-						feed.animate({top: '-='+30}, speed, function(){
-							$(this).append($(this).children().eq(counts).clone());
-							counts++;
+						feed.animate({top: -30}, speed, function(){
+							//move the first item and put it as last item
+							$(this).children('li:last').after($(this).children('li:first'));
+							//set the default item to correct position
+							$(this).css({'top' : '0px'});
 							play();
 						});
 					}, interval);
