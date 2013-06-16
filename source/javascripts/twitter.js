@@ -52,7 +52,7 @@
 		}
 
 		if ($(window).width() > 600){
-			var url = 'https://api.twitter.com/1/statuses/user_timeline/'+userid+'.json?count='+count+'&exclude_replies='+(reply ? '0' : '1')+'&trim_user=true&callback=?';
+			var url = 'https://api.twitter.com/1/statuses/user_timeline.json?screen_name='+userid+'&count='+count+'&include_rts=true&trim_user=true&exclude_repies='+(reply ? '0' : '1')+'&callback=?';
 			banner.show();
 			$.getJSON(url, function(json){
 				var length = json.length,
@@ -66,11 +66,13 @@
 					fragment.appendChild(item);
 				}
 
-				var play = function(){
+				var play = function(){				
 					timeout = setTimeout(function(){
-						feed.animate({top: '-='+30}, speed, function(){
-							$(this).append($(this).children().eq(counts).clone());
-							counts++;
+						feed.animate({top: -30}, speed, function(){
+							//move the first item and put it as last item
+							$(this).children('li:last').after($(this).children('li:first'));
+							//set the default item to correct position
+							$(this).css({'top' : '0px'});
 							play();
 						});
 					}, interval);
