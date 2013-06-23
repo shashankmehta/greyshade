@@ -354,7 +354,14 @@ $header-height: 30px;
 				&:hover{
 					border: 1px solid darken(#3E8DCC, 10%);
 				}
-			}			
+			}
+			&.stackoverflow{
+				background:url('/social/stackoverflow.png') center no-repeat #EF7522;
+				border:1px solid #EF7522;
+				&:hover{
+					border:1px solid #CC7A00;
+				}
+			}
 			&.linkedin{
 				background: image-url('social/linkedin.png') center no-repeat #005A87;
 				border: 1px solid #005A87;
