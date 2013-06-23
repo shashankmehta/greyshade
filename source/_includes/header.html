@@ -1,4 +1,4 @@
-<div class="profilepic">	
+<div class="profilepic">
 	<script src="{{ root_url }}/javascripts/md5.js"></script>
 	<script type="text/javascript">
 		$(function(){
@@ -25,6 +25,9 @@
 		{% endif %}
 		{% if site.coderwall_user %}
 		<a class="coderwall" href="https://coderwall.com/{{ site.coderwall_user }}" title="Coderwall">Coderwall</a>
+		{% endif %}
+		{% if site.stackoverflow_user and site.stackoverflow_user_id %}
+		  <a class="stackoverflow" href="http://stackoverflow.com/users/{{site.stackoverflow_user_id}}/{{site.stackoverflow_user}}" title="StackOverflow"></a>
 		{% endif %}
 		{% if site.linkedin_user %}
 		<a class="linkedin" href="http://www.linkedin.com/in/{{ site.linkedin_user }}">LinkedIn</a>
