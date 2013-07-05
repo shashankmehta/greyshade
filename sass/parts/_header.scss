@@ -313,7 +313,7 @@ $header-height: 30px;
 			@include border-radius(50%);
 			@include inline-block;
 			text-indent: -9999px;
-			margin-right: 15px;
+			margin: 0 15px 15px 0;
 			opacity: 0.5;
 			@include square(28px);
 			@include transition(0.3s);
