@@ -356,7 +356,7 @@ $header-height: 30px;
 				}
 			}
 			&.stackoverflow{
-				background:url('/social/stackoverflow.png') center no-repeat #EF7522;
+				background: image-url('social/stackoverflow.png') center no-repeat #EF7522;
 				border:1px solid #EF7522;
 				&:hover{
 					border:1px solid #CC7A00;
