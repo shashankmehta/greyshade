@@ -313,7 +313,7 @@ $header-height: 30px;
 			@include border-radius(50%);
 			@include inline-block;
 			text-indent: -9999px;
-			margin-right: 15px;
+			margin: 0 15px 15px 0;
 			opacity: 0.5;
 			@include square(28px);
 			@include transition(0.3s);
@@ -356,7 +356,7 @@ $header-height: 30px;
 				}
 			}
 			&.stackoverflow{
-				background:url('/social/stackoverflow.png') center no-repeat #EF7522;
+				background: image-url('social/stackoverflow.png') center no-repeat #EF7522;
 				border:1px solid #EF7522;
 				&:hover{
 					border:1px solid #CC7A00;
