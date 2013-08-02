@@ -1,5 +1,9 @@
 <!DOCTYPE HTML>
+{% if site.lang %}
+<html lang="{{ site.lang }}">
+{% else %}
 <html>
+{% endif %}
 <head>
 	<meta charset="utf-8">
 	<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
