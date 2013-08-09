@@ -1,5 +1,9 @@
 <!DOCTYPE HTML>
+{% if site.lang %}
+<html lang="{{ site.lang }}">
+{% else %}
 <html>
+{% endif %}
 <head>
 	<meta charset="utf-8">
 	<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
@@ -20,7 +24,6 @@
 	<link href="{{ root_url }}/favicon.png" rel="shortcut icon">
 	<link href="{{ root_url }}/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
 	{% include custom/head.html %}
 </head>

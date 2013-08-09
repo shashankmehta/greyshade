@@ -7,7 +7,6 @@
 	</script>
 </div>
 {% include custom/header.html %}
-<p class="subtitle">{{ site.subtitle }}</p>
 <nav id="main-nav">{% include navigation.html %}</nav>
 <nav id="sub-nav">
 	<div class="social">
@@ -30,7 +29,7 @@
 		  <a class="stackoverflow" href="http://stackoverflow.com/users/{{site.stackoverflow_user_id}}/{{site.stackoverflow_user}}" title="StackOverflow"></a>
 		{% endif %}
 		{% if site.linkedin_user %}
-		<a class="linkedin" href="http://www.linkedin.com/in/{{ site.linkedin_user }}">LinkedIn</a>
+		<a class="linkedin" href="http://www.linkedin.com/in/{{ site.linkedin_user }}" title="LinkedIn">LinkedIn</a>
 		{% endif %}
 		{% if site.pinterest_user %}
 		<a class="pinterest" href="https://pinterest.com/{{ site.pinterest_user }}" title="Pinterest">Pinterest</a>
