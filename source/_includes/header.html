@@ -1,10 +1,14 @@
 <div class="profilepic">
+	{% if site.email_md5 %}
+	<img src="http://www.gravatar.com/avatar/{{ site.email_md5 }}?s=160" alt="Profile Picture" style="width: 160px;" />
+	{% else %}
 	<script src="{{ root_url }}/javascripts/md5.js"></script>
 	<script type="text/javascript">
 		$(function(){
 			$('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("{{ site.email | downcase }}") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
 		});
 	</script>
+	{% endif %}
 </div>
 {% include custom/header.html %}
 <nav id="main-nav">{% include navigation.html %}</nav>
