@@ -387,6 +387,13 @@ $header-height: 30px;
 			    border: 1px solid darken(rgb(0,102,255), 10%);
 			  }
 			}
+			&.douban{
+			  background: image-url('social/douban.png') center no-repeat rgb(0,128,36);
+			  border: 1px solid rgb(0,128,36);
+			  &:hover{
+			    border: 1px solid darken(rgb(0,128,36), 10%);
+			  }
+			}
 			&.rss{
 				background: image-url('social/rss.png') center no-repeat #EF7522;
 				border: 1px solid #EF7522;
