@@ -320,6 +320,13 @@ $header-height: 30px;
 			&:hover{
 				opacity: 1;
 			}
+			&.email{
+				background: image-url('social/email.png') center no-repeat #050505;
+				border: 1px solid #050505;
+				&:hover{
+					border: 1px solid darken(#050505, 10%);
+				}
+			}
 			&.facebook{
 				background: image-url('social/facebook.png') center no-repeat #3B5998;
 				border: 1px solid #3B5998;
