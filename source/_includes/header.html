@@ -47,6 +47,9 @@
 		{% if site.pinboard_user %}
 			<a class="pinboard" href="https://pinboard.in/u:{{ site.pinboard_user }}" title="Pinboard">Pinboard</a>
 		{% endif %}
+		{% if site.douban_user %}
+		<a class="douban" href="https://www.douban.com/people/{{ site.douban_user }}" title="Douban">Douban</a>
+		{% endif %}
 		{% if site.subscribe_rss %}
 			<a class="rss" href="{{ site.subscribe_rss }}" title="RSS">RSS</a>
 		{% endif %}
