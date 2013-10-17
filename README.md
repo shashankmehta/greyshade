@@ -7,6 +7,8 @@ Starting point forked from [Slash](https://github.com/tommy351/Octopress-Theme-S
 
 ![mobile view](https://dl.dropbox.com/u/6396581/greyshade/1.png)
 
+![mobile view](https://dl.dropbox.com/u/6396581/greyshade/3.png)
+
 ![Desktop view](https://dl.dropbox.com/u/6396581/greyshade/2.png)
 
 ##Features

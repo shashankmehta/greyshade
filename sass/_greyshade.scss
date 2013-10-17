@@ -6,7 +6,7 @@ html {
 
 body {
 	background: #3D4349;
-	font-family: "Open Sans", "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: "Alegreya", Georgia, Cambria, "Times New Roman", Times, serif;
 	height: 100%;
 	color: #333;
 }
@@ -90,22 +90,37 @@ body {
 		  width: auto;
 		}
 		.mid-col-container {
-			padding: 0px 70px 0px 40px;
+			padding: 0px 70px 0px 100px;
+			max-width: 800px;
 			#content {
 				width: 100%;
 				article {
 					border-top: none;
+					padding: 80px 0px;
 					.title {
 						margin-left: 0px;
+						font-style: italic;
+						font-size: 3em;
+					}
+					&.single-post .title{
+						text-align: center;
+						text-decoration: underline;
 					}
 					.entry-content {
 						margin-left: 0px;
-						line-height: 1.5em;
+						line-height: 1.4em;
+						font-size: 1.5em;
+						p {
+							margin-top: 30px;
+						}
+						.github-widget p {
+							margin-top: 0px;
+						}
 						.more-link:before {
 							line-height: 1.2em;
 						}
 						.more-link {
-							padding-left: 20px;
+							padding-left: 0px;
 						}
 						.gist .gist-file .gist-data {
 							.line_numbers {
@@ -117,15 +132,20 @@ body {
 						}
 						h2 {
 							font-size: 1.3em;
-							color: #574C4C;
-							border-bottom: none;
+							color: #333;
+							margin-top: 30px;
+							margin-bottom: -20px;
+							font-weight: bold;
 						}
 						h2::before {
 							border-bottom: none;
 						}
 						blockquote {
 							border-left: 5px solid $greyshade;
-							background: #FCFCFC;
+							background: #F7F7F7;
+							p {
+								margin-top: 0px; 
+							}
 						}
 						table {
 							line-height: 1.2em;
