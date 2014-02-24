@@ -1,5 +1,5 @@
 //This is the main GREYSHADE css file.
-@import custom/_font.scss
+@import "custom/_font.scss";
 
 html {
   height: 100%;
@@ -145,7 +145,7 @@ body {
 							border-left: 5px solid $greyshade;
 							background: #F7F7F7;
 							p {
-								margin-top: 0px; 
+								margin-top: 0px;
 							}
 						}
 						table {
