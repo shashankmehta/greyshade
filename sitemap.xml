@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>http://shashankmehta.in/archive/2013/whats-jekyll.html</loc>
+        <lastmod>2014-02-24T16:24:53+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://shashankmehta.in/archive/2014/example-content.html</loc>
+        <lastmod>2014-02-24T16:24:53+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://shashankmehta.in/archive/2014/greyshade.html</loc>
+        <lastmod>2014-02-24T16:24:53+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://shashankmehta.in/robots.txt</loc>
+        <lastmod>2014-02-24T14:59:10+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://shashankmehta.in/</loc>
+        <lastmod>2014-02-24T16:24:53+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://shashankmehta.in/blog/categories/</loc>
+        <lastmod>2014-02-24T16:24:53+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://shashankmehta.in/blog/archives/</loc>
+        <lastmod>2014-02-24T16:24:53+05:30</lastmod>
+    </url>
+</urlset>
