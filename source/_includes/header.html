@@ -10,6 +10,11 @@
 	</script>
 	{% endif %}
 </div>
+{% if site.title %}
+	<h3 class="name">
+		<a href="/" title="{{ site.title }}">{{ site.title }}</a>
+	</h3>
+{% endif %}
 {% include custom/header.html %}
 <nav id="main-nav">{% include navigation.html %}</nav>
 <nav id="sub-nav">

@@ -222,10 +222,22 @@ body {
 			#main-nav {
 				margin-top: 10px;
 
+				.aboutme {
+					margin-top: 20px;
+				}
+
 				p {
 					line-height: 1.4em;
 				}
 			}
+			.name{
+				margin-top: 10px;
+				font-weight: 300;
+				a{
+					font-size: 1.5em;
+				}
+			}
+
 			.profilepic {
 				img {
 					border-radius: 50%;
@@ -284,7 +296,7 @@ body {
 			margin: 0 0;
 	}
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 830px){
 	.container {
 		.credit-box {
 			display: none;
