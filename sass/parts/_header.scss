@@ -401,6 +401,13 @@ $header-height: 30px;
 			    border: 1px solid darken(rgb(0,128,36), 10%);
 			  }
 			}
+			&.quora{
+				background: image-url('social/quora.png') center no-repeat #a82400;
+				border: 1px solid #a82400;
+				&:hover{
+					border: 1px solid darken(#a82400, 10%);
+			 	}
+			 }
 			&.rss{
 				background: image-url('social/rss.png') center no-repeat #EF7522;
 				border: 1px solid #EF7522;
