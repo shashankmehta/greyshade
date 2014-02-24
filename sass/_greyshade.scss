@@ -6,7 +6,7 @@ html {
 
 body {
 	background: #3D4349;
-	font-family: $serif, "Alegreya", Georgia, Cambria, "Times New Roman", Times, serif;
+	font-family: "Nunito", sans-serif;
 	height: 100%;
 	color: #333;
 }
@@ -202,6 +202,7 @@ body {
 		width: 23%;
 		position: fixed;
 		opacity: .3;
+		color: $color-gray05;
 		-webkit-transition: all .2s ease-in;
 		-moz-transition: all .2s ease-in;
 		-o-transition: all .2s ease-in;
@@ -216,6 +217,10 @@ body {
 			padding: 20% 0% 0% 15%;
 			#main-nav {
 				margin-top: 10px;
+
+				p {
+					line-height: 1.4em;
+				}
 			}
 			.profilepic {
 				img {
@@ -238,6 +243,9 @@ body {
 				}
 				.social {
 					margin-bottom: 10px;
+					a {
+						margin-right: 5px;
+					}
 				}
 			}
 		}
