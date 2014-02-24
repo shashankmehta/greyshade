@@ -9,6 +9,7 @@ body {
 	font-family: "Nunito", sans-serif;
 	height: 100%;
 	color: #333;
+	font-size: 11px;
 }
 
 ::selection, ::-moz-selection, ::-webkit-selection {
@@ -99,8 +100,8 @@ body {
 					padding: 80px 0px;
 					.title {
 						margin-left: 0px;
-						font-style: italic;
 						font-size: 3em;
+						font-weight: 500;
 					}
 					&.single-post .title{
 						text-align: center;
@@ -111,7 +112,7 @@ body {
 						line-height: 1.4em;
 						font-size: 1.5em;
 						p {
-							margin-top: 30px;
+							margin-top: 10px;
 						}
 						.github-widget p {
 							margin-top: 0px;
@@ -134,7 +135,6 @@ body {
 							font-size: 1.3em;
 							color: #333;
 							margin-top: 30px;
-							margin-bottom: -20px;
 							font-weight: bold;
 						}
 						h2::before {
@@ -203,15 +203,18 @@ body {
 		position: fixed;
 		opacity: .3;
 		color: $color-gray05;
+		height: 100%;
+		font-size: 1.3em;
 		-webkit-transition: all .2s ease-in;
 		-moz-transition: all .2s ease-in;
 		-o-transition: all .2s ease-in;
 		-ms-transition: all .2s ease-in;
 		transition: all .2s ease-in;
-		height: 100%;
+		
 		.intrude-less {
 			width: 80%;
 		}
+		
 		#header {
 			width: 100%;
 			padding: 20% 0% 0% 15%;
