@@ -48,7 +48,7 @@
 			<a class="pinboard" href="https://pinboard.in/u:{{ site.pinboard_user }}" title="Pinboard">Pinboard</a>
 		{% endif %}
 		{% if site.douban_user %}
-		<a class="douban" href="https://www.douban.com/people/{{ site.douban_user }}" title="Douban">Douban</a>
+			<a class="douban" href="https://www.douban.com/people/{{ site.douban_user }}" title="Douban">Douban</a>
 		{% endif %}
 		{% if site.quora_user %}
 			<a class="quora" href="https://quora.com/{{ site.quora_user }}" title="Quora">Quora</a>
@@ -56,7 +56,10 @@
 		{% if site.instagram_user %}
 			<a class="instagram" href="https://instagram.com/{{ site.instagram_user }}" title="Instagram">Instagram</a>
 		{% endif %}
-    {% if site.subscribe_rss %}
+    	{% if site.behance_user %}
+			<a class="behance" href="https://www.behance.net/{{ site.behance_user }}" title="Behance">Behance</a>
+		{% endif %}
+    	{% if site.subscribe_rss %}
 			<a class="rss" href="{{ site.subscribe_rss }}" title="RSS">RSS</a>
 		{% endif %}
 	</div>
