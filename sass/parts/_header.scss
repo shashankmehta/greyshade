@@ -408,6 +408,13 @@ $header-height: 30px;
 					border: 1px solid darken(#a82400, 10%);
 			 	}
 			 }
+      &.instagram{
+				background: image-url('social/instagram.png') center no-repeat #517fa4;
+				border: 1px solid #517fa4;
+				&:hover{
+					border: 1px solid darken(#517fa4, 10%);
+			 	}
+			 }
 			&.rss{
 				background: image-url('social/rss.png') center no-repeat #EF7522;
 				border: 1px solid #EF7522;
