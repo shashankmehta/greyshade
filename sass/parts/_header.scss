@@ -388,18 +388,18 @@ $header-height: 30px;
 				}
 			}
 			&.pinboard{
-			  background: image-url('social/pinboard.png') center no-repeat rgb(0,102,200);
-			  border: 1px solid rgb(58,114,159);
-			  &:hover{
-			    border: 1px solid darken(rgb(0,102,255), 10%);
-			  }
+			  	background: image-url('social/pinboard.png') center no-repeat rgb(0,102,200);
+			  	border: 1px solid rgb(58,114,159);
+			  	&:hover{
+			    	border: 1px solid darken(rgb(0,102,255), 10%);
+			  	}
 			}
 			&.douban{
-			  background: image-url('social/douban.png') center no-repeat rgb(0,128,36);
-			  border: 1px solid rgb(0,128,36);
-			  &:hover{
-			    border: 1px solid darken(rgb(0,128,36), 10%);
-			  }
+			  	background: image-url('social/douban.png') center no-repeat rgb(0,128,36);
+			  	border: 1px solid rgb(0,128,36);
+			  	&:hover{
+			    	border: 1px solid darken(rgb(0,128,36), 10%);
+			  	}
 			}
 			&.quora{
 				background: image-url('social/quora.png') center no-repeat #a82400;
@@ -407,7 +407,21 @@ $header-height: 30px;
 				&:hover{
 					border: 1px solid darken(#a82400, 10%);
 			 	}
-			 }
+			}
+      		&.instagram{
+				background: image-url('social/instagram.png') center no-repeat #517fa4;
+				border: 1px solid #517fa4;
+				&:hover{
+					border: 1px solid darken(#517fa4, 10%);
+			 	}
+			}
+      		&.behance{
+				background: image-url('social/behance.png') center no-repeat #1769ff;
+				border: 1px solid #1769ff;
+				&:hover{
+					border: 1px solid darken(#1769ff, 10%);
+			  	}
+			}
 			&.rss{
 				background: image-url('social/rss.png') center no-repeat #EF7522;
 				border: 1px solid #EF7522;
