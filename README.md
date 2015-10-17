@@ -29,7 +29,7 @@ Highlight color: This color is used on a:hover, blockquotes etc. I'll be using i
 Assuming you have installed the default theme, type the code below in terminal.
 
     $ git clone git@github.com:shashankmehta/greyshade.git .themes/greyshade
-    $ echo "\$greyshade: color;" >> sass/custom/_colors.scss //Substitue 'color' with your highlight color
+    $ echo "\$greyshade: color;" >> .themes/greyshade/sass/custom/_colors.scss //Substitue 'color' with your highlight color
     $ rake "install[greyshade]"
     $ rake generate
 
