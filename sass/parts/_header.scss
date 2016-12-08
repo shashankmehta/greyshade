@@ -429,6 +429,13 @@ $header-height: 30px;
 					border: 1px solid darken(#EF7522, 10%);
 				}
 			}
+			&.quora{
+				background: image-url('social/quora.png') center no-repeat #a82400;
+				border: 1px solid #a82400;
+				&:hover{
+					border: 1px solid darken(#a82400, 10%);
+				}
+			}
 		}
 	}
 }
